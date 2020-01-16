@@ -1,4 +1,4 @@
-# @juleshyacinthe/cordova-plugin-apple-pay-stripe
+# juleshyacinthe-cordova-plugin-apple-pay-stripe
 
 > Cordova plugin for Stripe - Apple Pay integration
 
@@ -23,7 +23,7 @@ You can find more information [here](https://help.apple.com/xcode/mac/current/#/
 ## Installation
 ```
 $ cordova plugin add --save https://github.com/juleshyacinthe/cordova-plugin-apple-pay-stripe.git \
-  --variable STRIPE_LIVE_PUBLISHABLE_KEY="pk_live_xxxxxxxxxxxxxxxxxxxxxxxx" \
+  --variable STRIPE_LIVE_PUBLISHABLE_KEY="xpk_live_xxxxxxxxxxxxxxxxxxxxxxxx" \
   --variable STRIPE_TEST_PUBLISHABLE_KEY="pk_test_xxxxxxxxxxxxxxxxxxxxxxxx" \
   --variable APPLE_MERCHANT_IDENTIFIER="merchant.com.yourstoreid"
 ```
