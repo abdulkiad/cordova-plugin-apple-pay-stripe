@@ -450,6 +450,7 @@
 
     [response setObject:paymentData  forKey:@"paymentData"];
     [response setObject:payment.token.transactionIdentifier  forKey:@"transactionIdentifier"];
+    [response setObject:@""  forKey:@"stripeToken"];
 
     // Different version of iOS present the billing/shipping addresses in different ways. Pain.
     if ([[NSProcessInfo processInfo] isOperatingSystemAtLeastVersion:(NSOperatingSystemVersion){9, 0, 0}]) {
