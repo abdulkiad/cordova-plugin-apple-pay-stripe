@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-           id="cordova-plugin-stripe-apple-pay"
+           id="@juleshyacinthe/cordova-plugin-apple-pay-stripe"
       version="1.0.0">
 
     <name>Apple Pay with Stripe</name>
     <description>Implements Apple Pay with Stripe.</description>
     <keywords>cordova,payment,apple pay,stripe</keywords>
-    <repo>https://github.com/asangadev/cordova-plugin-stripe-apple-pay</repo>
+    <repo>https://github.com/juleshyacinthe/cordova-plugin-apple-pay-stripe</repo>
 
     <preference name="STRIPE_LIVE_PUBLISHABLE_KEY" />
     <preference name="STRIPE_TEST_PUBLISHABLE_KEY" />

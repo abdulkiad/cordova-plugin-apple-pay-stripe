@@ -1,4 +1,4 @@
-# cordova-plugin-stripe-apple-pay
+# @juleshyacinthe/cordova-plugin-apple-pay-stripe
 
 > Cordova plugin for Stripe - Apple Pay integration
 
