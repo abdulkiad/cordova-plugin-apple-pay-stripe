@@ -22,7 +22,7 @@ You can find more information [here](https://help.apple.com/xcode/mac/current/#/
 
 ## Installation
 ```
-$ cordova plugin add --save cordova-plugin-stripe-apple-pay \
+$ cordova plugin add --save @juleshyacinthe/cordova-plugin-apple-pay-stripe \
   --variable STRIPE_LIVE_PUBLISHABLE_KEY="pk_live_xxxxxxxxxxxxxxxxxxxxxxxx" \
   --variable STRIPE_TEST_PUBLISHABLE_KEY="pk_test_xxxxxxxxxxxxxxxxxxxxxxxx" \
   --variable APPLE_MERCHANT_IDENTIFIER="merchant.com.yourstoreid"
