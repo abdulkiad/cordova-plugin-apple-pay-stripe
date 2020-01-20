@@ -396,9 +396,12 @@
     self.paymentAuthorizationBlock = nil;
 
     NSString * appleMerchantIdentifier = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"AppleMerchantIdentifier"];
+    NSString * countryCode = [self countryCodeFromArguments:command.arguments];
+    NSString * currencyCode = [self currencyCodeFromArguments:command.arguments];
+       
     // Old version
     // PKPaymentRequest *request = [PKPaymentRequest new];
-    PKPaymentRequest *request = [Stripe paymentRequestWithMerchantIdentifier:appleMerchantIdentifier];
+    PKPaymentRequest *request = [Stripe paymentRequestWithMerchantIdentifier:appleMerchantIdentifier country:countryCode currency:currencyCode];
 
     // Different version of iOS support different networks, (ie Discover card is iOS9+; not part of my project, so ignoring).
     request.supportedNetworks = supportedPaymentNetworks;
