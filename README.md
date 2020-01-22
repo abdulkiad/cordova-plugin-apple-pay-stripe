@@ -23,7 +23,7 @@ You can find more information [here](https://help.apple.com/xcode/mac/current/#/
 ## Installation
 ```
 $ cordova plugin add --save juleshyacinthe-cordova-plugin-apple-pay-stripe \
-  --variable STRIPE_LIVE_PUBLISHABLE_KEY="xpk_live_xxxxxxxxxxxxxxxxxxxxxxxx" \
+  --variable STRIPE_LIVE_PUBLISHABLE_KEY="pk_live_xxxxxxxxxxxxxxxxxxxxxxxx" \
   --variable STRIPE_TEST_PUBLISHABLE_KEY="pk_test_xxxxxxxxxxxxxxxxxxxxxxxx" \
   --variable APPLE_MERCHANT_IDENTIFIER="merchant.com.yourstoreid"
 ```
@@ -264,7 +264,7 @@ To be able to build for Release and Distribution, you should `Embed and Sign` th
 Then, go to `Build Phases`, and add a `Run Script` phase at the very end. What you should put in the text box is:
 
 ```
-bash "$SOURCE_ROOT/Bsit/Plugins/juleshyacinthe-cordova-plugin-apple-pay-stripe/Stripe.framework/integrate-dynamic-framework.sh"
+bash "$SOURCE_ROOT/YOUR_APP_NAME/Plugins/juleshyacinthe-cordova-plugin-apple-pay-stripe/Stripe.framework/integrate-dynamic-framework.sh"
 ```
 
 ## License
