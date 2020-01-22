@@ -257,6 +257,16 @@ properties are:
  * `email`
  * `phone`
 
+
+## Building for distribution
+
+To be able to build for Release and Distribution, you should `Embed and Sign` the Stripe framework under the `General` tab of the app in xCode
+Then, go to `Build Phases`, and add a `Run Script` phase at the very end. What you should put in the text box is:
+
+```
+bash "$SOURCE_ROOT/Bsit/Plugins/juleshyacinthe-cordova-plugin-apple-pay-stripe/Stripe.framework/integrate-dynamic-framework.sh"
+```
+
 ## License
 
 This project is licensed under *GNU General Public License v3.0*.
